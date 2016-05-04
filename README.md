@@ -20,7 +20,7 @@ var data = {
     "name": "Barret Lee",
     "age": "20"
 };
-var result = H.Template.tmpl(tpl, data);
+var result = H.Template(tpl, data);
 ```
 ###Router(路由)###
 
