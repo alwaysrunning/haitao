@@ -1,0 +1,10 @@
+{   
+    "undef": true,
+    "unused": true,
+    "curly": true,
+    "immed": true,
+    "latedef": true,
+    "noarg": true,
+    "unused": true,
+    "evil": true
+}
