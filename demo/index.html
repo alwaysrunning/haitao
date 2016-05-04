@@ -27,7 +27,7 @@
       <li><a href="#/books/view/1">#/books/view/1</a></li>
     </ul>
     <a href="#about">111111111111111</a>
-<div id="target">Loading...</div>
+    <div id="target">Loading...</div>
     <script src="./../dist/haitao.js"></script>
 
     <script>
@@ -55,7 +55,6 @@
       };
       H.router(routes).init();
 
-
 var tpl = '<% if(true) {%><p>Hei, my name is <%=name%>, and I\'m <%= age %> years old</p><%}%>';
 var data = {
     "name": "Barret Lee",
@@ -65,33 +64,7 @@ var data = {
 
 
 
-window.onload = function(){
-  var user = {
-  id: 0,
-  name: 'Brendan Eich',
-  title: 'Mr.'
-};
 
-// 创建用户的greeting
-function updateGreeting() {
-  user.greeting = 'Hello, ' + user.title + ' ' + user.name + '!';
-}
-
-
-
-Object.observe(user, function(changes) {
-  console.log(changes)
-  changes.forEach(function(change) {
-    // 当name或title属性改变时, 更新greeting
-    if (change.name === 'name' || change.name === 'title') {
-      updateGreeting();
-    }
-  });
-});
-
-//updateGreeting();
-delete user.title;
-}
 
 
       /* end demo script */
