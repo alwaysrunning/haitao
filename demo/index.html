@@ -5,29 +5,19 @@
     <link rel="stylesheet" href="./assets/normalize.css" />
     <link rel="stylesheet" href="./assets/main.css" />
     <style>
-      /* begin demo embedded styles */
-
-      /* end demo embedded styles */
     </style>
   </head>
   <body>
-    <h1 class="andy">haitao demo</h1>
-
-    <!-- begin demo markup -->
-
-    <!-- end demo markup -->
-
-    <p class="andy">See the <a href="http://alwaysrunning.github.io/haitao">project homepage</a>.
-    <p>Check out the <a href="https://github.com/alwaysrunning/haitao">project repo</a>.
-    <p>Copyright 2016 Yang Haitao</p>
-    <a href="/products/12/edit/22">111111111111111</a>
+ 
     <ul>
       <li><a href="#/author">#/author</a></li>
       <li><a href="#/books">#/books</a></li>
       <li><a href="#/books/view/1">#/books/view/1</a></li>
     </ul>
-    <a href="#about">111111111111111</a>
     <div id="target">Loading...</div>
+    
+    
+    
     <script src="./../dist/haitao.js"></script>
 
     <script>
@@ -38,6 +28,10 @@
       H.addEvent("hh",a)
       H.removeEvent("hh")
       H.fireEvent("hh",'hello world');
+      
+      
+      
+      
       var author = function () { console.log("author"); };
       var books = function () { console.log("books"); };
       var viewBook = function (bookId) {
@@ -45,7 +39,6 @@
         var tem = H.template(tpl,data);
         document.getElementById("target").innerHTML = tem
       };
-
       var routes = {
         '/author': author,
         '/books': [books, function() {
@@ -55,11 +48,13 @@
       };
       H.router(routes).init();
 
-var tpl = '<% if(true) {%><p>Hei, my name is <%=name%>, and I\'m <%= age %> years old</p><%}%>';
-var data = {
-    "name": "Barret Lee",
-    "age": "20"
-};
+
+
+      var tpl = '<% if(true) {%><p>Hei, my name is <%=name%>, and I\'m <%= age %> years old</p><%}%>';
+      var data = {
+         "name": "Barret Lee",
+         "age": "20"
+      };
 
 
 
